@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /*
- * main - output "Programming is like building a multilingual puzzle" using puts
- * return: 0 if exited without err, otherwise return non-zero
+ * main - prints the str "Programming is like building a multilingual puzzle"
+ * Return: 0 if exit gracefully, otherwise non-zero
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return(0);
+	return (0);
 }

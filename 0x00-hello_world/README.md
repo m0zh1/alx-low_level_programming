@@ -3,3 +3,4 @@
 2-Assembler script generates assembly code of a C file
 3-name script compiles C source to an exe cifun
 4-puts uses func puts to print given string. Returns 0 if successful
+5-printf prints the exact phrase given using printf func
