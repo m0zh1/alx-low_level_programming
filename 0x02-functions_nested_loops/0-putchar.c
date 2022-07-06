@@ -1,11 +1,20 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * prints _putchar followed by a newline
- * main: entry point
- * return: 0
+ * main: entry
+ * print "_putchar" followed by new line
+ * Return: 0
  */
 int main(void)
 {
-	return (write("_putchar"));
+	_putchar(95);
+	_putchar(112);
+	_putchar(117);
+	_putchar(116);
+	_putchar(99);
+	_putchar(104);
+	_putchar(97);
+	_putchar(114);
+	_putchar("\n");
+	return (0);
 }
