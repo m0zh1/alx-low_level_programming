@@ -7,3 +7,4 @@ File 3-islower checks if a lowercase character exists\n
 4-isalpha checks if a character c is alphabetic; return 1 if true, else 0.\n
 File 5-sign checks if int n is less than, equal to or greater tham 0\n
 6-abs computes the absoulute value of int n\n
+7-print_last_digit computes and returns value of last digit of int n\n
