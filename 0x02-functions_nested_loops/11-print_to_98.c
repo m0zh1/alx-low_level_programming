@@ -5,31 +5,31 @@
  * print_to_98 - prints all natural nums n - 98
  * @n: print starting from num n
  */
-void print_to_98(int n)
+void print_to_98(intn)
 {
-	if (n > 98)
+	int i, j;
+	
+	if (n <= 98)
 	{
-		while (n >= 98)
+		for (i = n; i <= 98; i++)
 		{
-			printf("%d", n);
-			if (n != 98)
+			if (i != 98)
 			{
-				printf(",");
+				printf("%d", i);
 			}
-			n -= 1;
+			else if (i == 98)
+			{
+				printf("%d\n", i);
+			}
+		}else if (n >= 98)
+		{
+			for (j = n; j >= 98; j--)
+			{
+				if (j != 98)
+					printf("%d", j);
+				else if (j == 98)
+					printf("%d\n", j);
+			}
 		}
 	}
-	else
-	{
-		while (n <= 98)
-		{
-			printf("%d", n);
-			if (n != 98)
-			{
-				printf(",");
-			}
-			n += 1;
-		}
-	}
-	printf("\n");
 }
