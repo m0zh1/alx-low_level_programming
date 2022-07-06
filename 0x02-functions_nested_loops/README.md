@@ -8,3 +8,5 @@ File 3-islower checks if a lowercase character exists\n
 File 5-sign checks if int n is less than, equal to or greater tham 0\n
 6-abs computes the absoulute value of int n\n
 7-print_last_digit computes and returns value of last digit of int n\n
+File 8-24 prints every minute in Jack Bauer day\n
+(-times_table computes the times table of 9\n
