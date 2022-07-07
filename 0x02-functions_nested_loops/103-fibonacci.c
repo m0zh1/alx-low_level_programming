@@ -14,15 +14,14 @@ int main(void)
 	t2 = 2;
 	total = 0;
 
-	while (t1 < 4000000 && (t1 % 2 == 0))
+	while (t2 < 4000000)
 	{
-		total += t1;
-
+		if (t2 % 2 == 0)
+			total += t2;
 		next = t1 + t2;
 		t1 = t2;
 		t2 = next;
 	}
 	printf("%d\n", total);
-
 	return (0);
 }
