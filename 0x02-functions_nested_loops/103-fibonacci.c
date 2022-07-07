@@ -14,9 +14,10 @@ int main(void)
 	t2 = 2;
 	total = 0;
 
-	while (t1 < 4000000 && t1 % 2 == 0)
+	while (t1 < 4000000 && (t1 % 2 == 0))
 	{
 		total += t1;
+
 		next = t1 + t2;
 		t1 = t2;
 		t2 = next;
