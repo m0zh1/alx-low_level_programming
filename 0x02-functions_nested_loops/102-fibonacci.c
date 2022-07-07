@@ -9,7 +9,7 @@
 int main(void)
 {
 	int count;
-	int fib1 = 1, fib2 = 2;
+	long int fib1 = 1, fib2 = 2;
 	long int next;
 
 	printf("%d, %d", fib1, fib2);
