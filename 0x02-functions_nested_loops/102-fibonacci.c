@@ -12,7 +12,7 @@ int main(void)
 	long int fib1 = 1, fib2 = 2;
 	long int next;
 
-	printf("%d, %d", fib1, fib2);
+	printf("%lu, %lu,", fib1, fib2);
 	next = fib1 + fib2;
 
 	for (count = 3; count <= 50; ++count)
