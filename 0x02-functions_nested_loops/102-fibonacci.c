@@ -12,12 +12,19 @@ int main(void)
 	long int fib1 = 1, fib2 = 2;
 	long int next;
 
-	printf("%lu, %lu,", fib1, fib2);
+	printf("%lu, %lu, ", fib1, fib2);
 	next = fib1 + fib2;
 
 	for (count = 3; count <= 50; ++count)
 	{
-		printf("%lu, ", next);
+		if (count == 50)
+		{
+			printf("%lu\n", next);
+		}
+		else
+		{
+			printf("%lu, ", next);
+		}
 		fib1 = fib2;
 		fib2 = next;
 		next = fib1 + fib2;
