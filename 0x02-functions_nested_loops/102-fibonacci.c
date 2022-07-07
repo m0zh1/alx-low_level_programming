@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int count = 2;
+	int count;
 	int fib1 = 1, fib2 = 2;
 	long int next;
 
@@ -17,7 +17,7 @@ int main(void)
 
 	for (count = 3; count <= 50; ++count)
 	{
-		printf("%ld", next);
+		printf("%lu, ", next);
 		fib1 = fib2;
 		fib2 = next;
 		next = fib1 + fib2;
