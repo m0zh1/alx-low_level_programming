@@ -7,19 +7,19 @@
  */
 int main(void)
 {
-	int i;
+	int next;
 	int t1, t2, total;
 
 	t1 = 1;
 	t2 = 2;
 	total = 0;
 
-	while (t2 < 4000000 && t2 % 2 == 0)
+	while (t1 < 4000000 && t1 % 2 == 0)
 	{
-		total += t2;
-		i = t2;
-		t2 += t1;
-		t1 = i;
+		total += t1;
+		next = t1 + t2;
+		t1 = t2;
+		t2 = next;
 	}
 	printf("%d\n", total);
 
