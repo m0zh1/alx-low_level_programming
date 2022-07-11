@@ -37,8 +37,11 @@ int length(char *str)
 {
 	int count = 0;
 
-	while (*(str + count) != '\0')
+	while (count >= 0)
+	{
+		if (s[count] == '\0')
+			break;
 		count++;
-
+	}
 	return (count);
 }
