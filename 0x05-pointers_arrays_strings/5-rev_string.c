@@ -1,47 +1,31 @@
 #include "main.h"
 
-int length(char *str);
-
 /**
  * rev_string - reverses a string
  * @s: param of type char *
  */
 void rev_string(char *s)
 {
-	int len, idx;
-	char *start, *end, temp;
+	int idx, len, c;
+	char *str, temp;
 
-	len = length(s);
-	start = s;
-	end = s;
+	idx = 0;
 
-	for (idx = 0; idx < (len - 1); idx++)
-		end++;
-	for (idx = 0; idx < (len / 2); idx++)
+	while (idx >= 0)
 	{
-		temp = *end;
-		*end = *start;
-		*start = temp;
-
-		start++;
-		end++;
-	}
-}
-
-/**
- * length - returns the length of a string
- * @str: param of type char *
- * Return: length of @str
- */
-int length(char *str)
-{
-	int count = 0;
-
-	while (count >= 0)
-	{
-		if (str[count] == '\0')
+		if (s[idx] == '\0')
 			break;
-		count++;
+		idx++;
 	}
-	return (count);
+	str = s;
+
+	for (c = 0; c < (count - 1); c++)
+	{
+		for (len = c + 1; len > 0; len--)
+		{
+			temp = *(str + len);
+			*(str + len) = *(str + (len - 1));
+			*(str + (len - 1)) = temp;
+		}
+	}
 }
