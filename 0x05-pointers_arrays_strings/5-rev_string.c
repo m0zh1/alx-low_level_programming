@@ -19,7 +19,7 @@ void rev_string(char *s)
 	}
 	str = s;
 
-	for (c = 0; c < (count - 1); c++)
+	for (c = 0; c < (idx - 1); c++)
 	{
 		for (len = c + 1; len > 0; len--)
 		{
