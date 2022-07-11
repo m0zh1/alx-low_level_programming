@@ -1,13 +1,10 @@
 #include "main.h"
 
 /**
- * main - updates the pointer parameter
- * @n:m int type pointer
- * Return: always 0
+ * reset_to_98 - update a pointer of type int
+ * @n: param of int type pointer
  */
-int main(int *n)
+void reset_to_98(int *n)
 {
 	*n = 98;
-
-	return (0);
 }
