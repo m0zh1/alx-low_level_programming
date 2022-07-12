@@ -22,7 +22,6 @@ void passwd_gen(void)
 		printf("%c", randm);
 	}
 	printf("%c\n", (2772 - ch));
-	return (0);
 }
 
 /**
