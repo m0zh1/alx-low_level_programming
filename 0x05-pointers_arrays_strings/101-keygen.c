@@ -17,12 +17,14 @@ int main(void)
 
 /**
  * passwd_gen - computes valid random passwords
- * Return: 0
  */
 void passwd_gen(void)
 {
 	int randm, ch;
 	time_t t;
+
+	randm = 0;
+	ch = 0;
 
 	srand((unsigned int) time(&t));
 
