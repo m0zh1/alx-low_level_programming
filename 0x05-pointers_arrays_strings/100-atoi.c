@@ -13,7 +13,7 @@ int _atoi(char *s)
 
 	while (*(s + idx) != '\0')
 	{
-		if ((*(sz + idx) < '0' || *(s + idx) > '9') && sz > 0)
+		if ((*(s + idx) < '0' || *(s + idx) > '9') && sz > 0)
 			break;
 		if (*(s + idx) == '-')
 			x *= -1;
@@ -32,5 +32,5 @@ int _atoi(char *s)
 		orig_int = orig_int + ((*(s + i) - 48) * y);
 		y = y / 10;
 	}
-	return (orig__int * x);
+	return (orig_int * x);
 }
