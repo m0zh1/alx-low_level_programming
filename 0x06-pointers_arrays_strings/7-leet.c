@@ -7,9 +7,9 @@
  */
 char *leet(char *c)
 {
-	int lowercase[] = "aeotl";
-	int uppercase[] = "AEOTL";
-	int nums[] = "43071";
+	char lowercase[] = "aeotl";
+	char uppercase[] = "AEOTL";
+	int nums[] = {52, 51, 48, 55, 49};
 	int idx, i;
 
 	idx = 0;
